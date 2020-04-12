@@ -1,0 +1,7 @@
+# This is Git's per-user configuration file.
+[alias]
+	co = checkout
+	st = status
+	staged = diff --staged
+[core]
+	editor = vim
