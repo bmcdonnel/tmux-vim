@@ -5,21 +5,10 @@ set -ex
 
 cp tmux-start /usr/local/bin/tmux-start
 
-if [ -f /usr/share/tmux.conf ]; then
-  mv /usr/share/tmux.conf /usr/share/tmux.conf.bak
-fi
-cp tmux.conf /usr/share/tmux.conf
+cp tmux.conf ~/.tmux.conf
 
-if [ -f /usr/share/gitconfig ]; then
-  mv /usr/share/gitconfig /usr/share/gitconfig.bak
-fi
-cp gitconfig /usr/share/gitconfig
+cp gitconfig ~/.gitconfig
 
-if [ -f /usr/share/vim/vimrc.local ]; then
-  mv /usr/share/vim/vimrc.local /usr/share/vim/vimrc.local.bak
-fi
-cp vimrc /usr/share/vim/vimrc.local
+cp vimrc ~/.vimrc
 
-if [ ! -d /usr/share/vim/bundle ]; then
-  git clone https://github.com/VundleVim/Vundle.vim.git /usr/share/vim/bundle/Vundle.vim
-fi
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

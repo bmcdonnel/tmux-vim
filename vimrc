@@ -16,7 +16,7 @@ set nowrap
 let mapleader = '\'
 
 " set the runtime path to include Vundle and initialize
-set rtp+=/etc/vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -25,8 +25,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'flazz/vim-colorschemes'
-Plugin 'git://github.com/scrooloose/nerdtree.git'
-Plugin 'git://github.com/junegunn/fzf'
+Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
